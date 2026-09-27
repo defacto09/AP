@@ -2,7 +2,7 @@
 // Саламаха Роман
 // Лабораторна робота № 3.1
 // Розгалуження, задане формулою: функція однієї змінної.
-// Варіант 27
+// Варіант 25
 
 #include <iostream>
 #include <cmath>
@@ -18,15 +18,15 @@ int main()
 
     cout << "x = "; cin >> x;
 
-    A = fabs(9 * x * x * x + 2);
+    A = 8.1 + x * x * x;
 
     // спосіб 1: розгалуження в скороченій формі
-    if (x < 4)
-        B = 3 * pow(x, 5) - x * x * x + 2 * x - 1;
-    if (4 <= x && x < 7)
-        B = atan((x - 2) / 3);                  // arctg((x-2)/3)
-    if (x >= 7)
-        B = log10(2 / x + exp(3 * x + 1));      // lg(2x^(-1) + e^(3x+1))
+    if (x < -3.5)
+        B = 1 - pow(x, -5);
+    if (-3.5 <= x && x < 1)
+        B = 1 / tan(fabs(x + 1));          // ctg|x+1|
+    if (x >= 1)
+        B = atan(2 * x) - log10(x / 2);    // arctg 2x - lg(x/2)
 
     y = A + B;
 
@@ -34,17 +34,18 @@ int main()
     cout << "1) y = " << y << endl;
 
     // спосіб 2: розгалуження в повній формі
-    if (x < 4)
-        B = 3 * pow(x, 5) - x * x * x + 2 * x - 1;
+    if (x < -3.5)
+        B = 1 - pow(x, -5);
     else
-        if (x < 7)
-            B = atan((x - 2) / 3);
+        if (x < 1)
+            B = 1 / tan(fabs(x + 1));
         else
-            B = log10(2 / x + exp(3 * x + 1));
+            B = atan(2 * x) - log10(x / 2);
 
     y = A + B;
 
     cout << "2) y = " << y << endl;
 
+    cin.get();
     return 0;
 }
