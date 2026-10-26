@@ -1,5 +1,5 @@
 import unittest
-from Lab_06_1rec import create_array, count_elements, sum_element, zeroing
+from Lab_06_1_rec import create_array, count_elements, sum_element, zeroing
 
 
 class TestLab06_1_rec(unittest.TestCase):
