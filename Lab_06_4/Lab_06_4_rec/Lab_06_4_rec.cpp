@@ -1,6 +1,3 @@
-// Lab_06_4_rec.cpp
-// Опрацювання та впорядкування одновимірних динамічних масивів
-// (рекурсивний спосіб)
 #include <iostream>
 #include <iomanip>
 #include <ctime>

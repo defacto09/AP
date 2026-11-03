@@ -24,7 +24,7 @@ def count_elements(t, i):
 def sum_element(t, i):
     if i == len(t):
         return 0
-    if t[i] < 0 and i % 3 != 0:
+    if t[i] < 0 and not i % 3 == 0:
         return t[i] + sum_element(t, i + 1)
     return sum_element(t, i + 1)
 

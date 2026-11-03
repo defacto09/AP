@@ -27,7 +27,7 @@ def sum_element(t):
 
 def zeroing(t):
     for c in range(len(t)):
-        if t[c] < 0 and c % 3 != 0:
+        if t[c] < 0 and not c % 3 == 0:
             t[c] = 0
 
 def main():

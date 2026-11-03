@@ -1,6 +1,3 @@
-// Lab_06_3_rec.cpp
-// Сума парних елементів масиву: звичайна функція та шаблон функції
-// (рекурсивний спосіб)
 #include <iostream>
 #include <iomanip>
 #include <ctime>
